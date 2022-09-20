@@ -1,0 +1,19 @@
+.custom-city-input-wrappper {
+  padding: 10px 21px;
+  // border: 1px solid #e5e5e5;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.custom-city-input {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+
+  &.selected {
+    border-color: #007d69;
+  }
+}

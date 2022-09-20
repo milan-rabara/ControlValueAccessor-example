@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CustomCityInputComponent } from './custom-city-input/custom-city-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomCityInputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

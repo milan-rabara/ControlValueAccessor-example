@@ -1,0 +1,7 @@
+<section class="custom-city-input-wrappper">
+  <div class="custom-city-input" [class.selected]="selectedCityId === cityLocation.id"
+    *ngFor="let cityLocation of CITY_LIST; index as clIndex" (click)="selectedCityAndState(cityLocation)">
+    <p>{{ cityLocation.city }}</p>
+    <p>{{ cityLocation.state }}</p>
+  </div>
+</section>
