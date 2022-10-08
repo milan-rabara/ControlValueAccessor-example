@@ -1,14 +1,15 @@
 <section class="application-wrapper">
   <div class="form-element">
-    <label for="name">
-      Name:
-    </label>
+    <label for="name"> Name: </label>
     <input type="text" [(ngModel)]="name" id="name" />
   </div>
-  <app-custom-city-input ngDefaultControl [(ngModel)]="customLocationSelectModel"
-    (ngModelChange)="onSelectCustomCity($event)"></app-custom-city-input>
+  <app-custom-city-input
+    ngDefaultControl
+    [(ngModel)]="customLocationSelectModel"
+    (ngModelChange)="onSelectCustomCity($event)"
+  ></app-custom-city-input>
 </section>
 
-<div class="show-cusotom-input-jsop">
-  {{ JSON.stringify(customLocationSelectModel, null, 2) }}
-</div>
+<pre class="show-cusotom-input-jsop">{{
+  JSON.stringify(customLocationSelectModel, null, 2)
+}}</pre>
